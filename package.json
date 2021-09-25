@@ -1,0 +1,31 @@
+{
+  "name": "read-filepath-from-clipboard",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-win": "csc.exe /target:winexe /out:./bin/windows.exe windows.cs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jopemachine/read-filepath-from-clipboard.git"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "bin/**"
+  ],
+  "keywords": [
+    "clipboard"
+  ],
+  "author": "jopemachine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jopemachine/read-filepath-from-clipboard/issues"
+  },
+  "homepage": "https://github.com/jopemachine/read-filepath-from-clipboard#readme",
+  "dependencies": {
+    "clipboardy": "^2.3.0",
+    "execa": "^5.1.1"
+  }
+}
