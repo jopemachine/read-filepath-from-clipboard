@@ -1,7 +1,7 @@
 {
   "name": "read-filepath-from-clipboard",
   "version": "0.0.1",
-  "description": "",
+  "description": "Read file path from clipboard, working on cross-platform",
   "main": "index.js",
   "scripts": {
     "build-win": "csc.exe /target:winexe /out:./bin/windows.exe windows.cs"
