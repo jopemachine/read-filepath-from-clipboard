@@ -7,11 +7,11 @@ const execaOption = {
   stripFinalNewline: false,
 };
 
+const windowsBinPath = path.resolve(__dirname, "./bin/windows.exe");
+
 const handleSync = () => {
   if (process.platform === "win32") {
-    return execa
-      .sync(path.resolve(__dirname, "./bin/windows.exe"), execaOption)
-      .stdout.split("\n");
+    return execa.sync(windowsBinPath, execaOption).stdout.split("\n");
   } else if (process.platform === "darwin") {
     return clipboardy
       .readSync()
@@ -30,7 +30,7 @@ const handleSync = () => {
 const handleAsync = async () => {
   return new Promise((resolve, reject) => {
     if (process.platform === "win32") {
-      execa(path.resolve(__dirname, "./bin/windows.exe"), execaOption)
+      execa(windowsBinPath, execaOption)
         .then((result) => resolve(result.stdout.split("\n")))
         .catch(reject);
     } else if (process.platform === "darwin") {

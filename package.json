@@ -4,7 +4,7 @@
   "description": "Read file path from clipboard, working on cross-platform",
   "main": "index.js",
   "scripts": {
-    "build-win": "csc.exe /target:winexe /out:./bin/windows.exe windows.cs"
+    "build-win": "csc.exe /out:./bin/windows.exe windows.cs"
   },
   "repository": {
     "type": "git",
