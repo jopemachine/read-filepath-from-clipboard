@@ -2,7 +2,9 @@
 
 Read file paths from clipboard, working on cross-platform
 
-![demo](./demo.gif)
+![demo1](./media/demo.gif)
+
+![demo2](./media/demo.png)
 
 ## Usage
 

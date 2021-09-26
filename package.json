@@ -1,11 +1,12 @@
 {
   "name": "read-filepath-from-clipboard",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Read file paths from clipboard, working on cross-platform",
   "main": "index.js",
   "scripts": {
     "build-win": "csc.exe /out:./bin/windows.exe windows.cs"
   },
+  "bin": "cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jopemachine/read-filepath-from-clipboard.git"
@@ -13,10 +14,12 @@
   "files": [
     "index.js",
     "index.d.ts",
+    "cli.js",
     "bin/**"
   ],
   "keywords": [
-    "clipboard"
+    "clipboard",
+    "cli"
   ],
   "author": "jopemachine",
   "license": "MIT",
@@ -25,8 +28,10 @@
   },
   "homepage": "https://github.com/jopemachine/read-filepath-from-clipboard#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "clipboardy": "^2.3.0",
     "decode-uri-component": "^0.2.0",
-    "execa": "^5.1.1"
+    "execa": "^5.1.1",
+    "meow": "^5.0.0"
   }
 }
