@@ -1,6 +1,6 @@
 {
   "name": "read-filepath-from-clipboard",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Read file paths from clipboard, working on cross-platform",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/jopemachine/read-filepath-from-clipboard#readme",
   "dependencies": {
     "clipboardy": "^2.3.0",
+    "decode-uri-component": "^0.2.0",
     "execa": "^5.1.1"
   }
 }
