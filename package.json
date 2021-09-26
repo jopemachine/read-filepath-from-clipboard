@@ -1,6 +1,6 @@
 {
   "name": "read-filepath-from-clipboard",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Read file paths from clipboard, working on cross-platform",
   "main": "index.js",
   "scripts": {
